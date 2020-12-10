@@ -16,20 +16,32 @@ namespace SA_Client
             OSU a = new OSU();
             //await a.CreateUser("Insaf", "aaaaaaa@ssss.ru", "prettypassword");
             //User newUser = await a.CreateUser("Vitaliy", "aaa@ssss.ru", "prettypassword");
-            Token b = await a.GetToken("Insaf", "aaaaaaa@ssss.ru", "prettypassword");
-            Console.WriteLine(b.access);
-            string accessToken = b.access;
-            List <Profile> pr = await a.SearchUser(accessToken,"Insaf");
-            Profile profile = await a.SubmitPlay(accessToken, "5", "true", "204", "1");
-            Console.WriteLine(1);
-            Console.WriteLine(profile.hours_played);
-            Console.WriteLine(2);
-            profile = await a.AddFriend(accessToken, "Vitaliy");
-            profile = await a.MyProfile(accessToken);
-            profile = await a.UpdateProfile(accessToken, "Inno", "", "https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
-            List<Play> plays = await a.MyPlays(accessToken);
-            
+            //Token b = await a.GetToken("Insaf", "aaaaaaa@ssss.ru", "prettypassword");
+            //Console.WriteLine(b.access);
+            //string accessToken = b.access;
+            //List <Profile> pr = await a.SearchUser(accessToken,"");
+            //Profile profile = await a.SubmitPlay(accessToken, "5", "true", "204", "1");
+            //Console.WriteLine(1);
+            //Console.WriteLine(profile.hours_played);
+            //Console.WriteLine(2);
+            //profile = await a.AddFriend(accessToken, "Vitaliy");
+            //profile = await a.MyProfile(accessToken);
+            //profile = await a.UpdateProfile(accessToken, "Inno", "", "https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+            //List<Play> plays = await a.MyPlays(accessToken);
 
+            Map map = new Map();
+            
+            //await map.UploadFileToServer("Map8.png", "C:\\Users\\Insaf\\Desktop\\face77.png", "2:00", "10");
+            //await map.ReadAllMetaData();
+            //await map.UpdatePlaysByPK("1", "false");
+            //await map.UpdatePlaysByTitle("file3", "true");
+            //await map.DownloadFileFromServer("19", "C:\\Users\\Insaf\\Desktop\\face80.png");
+            //await map.ReadMetaDataByPK("1");
+            //await map.ReadMetaDataByTitle("file3");
+            //await map.DeletePlaysByPK("2");
+            //await map.DeletePlaysByTitle("Turka");
+            //await map.DeletePlays();
+            //await map.ReadAllMetaData();
         }
     }
     
